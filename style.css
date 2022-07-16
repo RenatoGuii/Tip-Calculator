@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --textoprincipal: 'Space Mono', monospace;
+
+    --StrongCyan: hsl(172, 67%, 45%);
+    --VeryDarkCyan: hsl(183, 100%, 15%);
+    --DarkGrayishCyan: hsl(186, 14%, 43%);
+    --GrayishCyan: hsl(184, 14%, 56%);
+    --LightGrayishCyan: hsl(185, 41%, 84%);
+    --VeryLightGrayishCyan: hsl(180, 38%, 94%);
+}
+
+body {
+    background-color: var(--LightGrayishCyan);
+    font-family: var(--textoprincipal);
+    font-weight: 700;
+    width: 100%;
+    height: 100vh;
+}
+.logo {
+    display: block;
+    margin: auto;
+    padding: 15px 0px 45px 0px;
+}
+.container {
+    background-color: white;
+    margin: auto;
+    width: 630px;
+    height: auto;
+    border-radius: 20px;
+    padding: 40px;
+}
+.bill {
+    color: var(--GrayishCyan);
+}
+.bill input {
+    font-family: var(--textoprincipal);
+    border: none;
+    background-color: var(--VeryLightGrayishCyan);
+    height: 20px;
+    width: 220px;
+    text-align: right;
+    padding: 5px;
+    font-size: 15px;
+    color: var(--VeryDarkCyan);
+}
+.bill input:placeholder-shown {
+    border: none;
+}
+.bill label {
+    background-color: var(--VeryLightGrayishCyan);
+    height: 5px;
+    padding-left: 5px;
+}
