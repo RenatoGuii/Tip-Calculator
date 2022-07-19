@@ -12,30 +12,16 @@
     <img class="logo" src="images/logo.svg" alt="">
     
     <main class="container">
-     
-                    <!--GREEN-->
-
-        <section class="green">
-                <div class="tip_amount">
-                    <p class="value">$0.00</p>
-                    <p>Tip Amount </p>
-                    <p class="person">/ person</p>
-                </div>
-                 <div class="total">
-                        <p class="value">$0.00</p>
-                        <p>Total</p>
-                        <p class="person">/ person</p>
-                 </div>
-                
-                <input type="submit" value="RESET" onclick="reset ()">
-            </section>
         
                     <!--WHITE-->
 
         <section class="white">
             <div class="bill">
                 <p>Bill</p>
-                <label for="bill_input"><img src="images/icon-dollar.svg" alt="">  <input type="number" name="bill_input" id="bill_input" placeholder="0"></label>
+                <div class="dolar-input">
+                    <img src="images/icon-dollar.svg" alt=""> 
+                    <input type="number" name="" id="dolar-number" placeholder="0">
+                </div>
             
             </div>
             <div class="select-tip">
@@ -48,18 +34,38 @@
                     <input type="radio" name="tips" id="15%" value="15/100">
                     <label for="15%">15%</label>
                     <input type="radio" name="tips" id="25%" value="25/100">
-                    <label for="25%">25%</label>
+                    <label class="responsive" for="25%">25%</label>
                     <input type="radio" name="tips" id="50%" value="50/100">
-                    <label for="50%">50%</label>
-                    <input type="submit" value="" onclick="custom ()">
-                    <label class="custom" for="custom">Custom</label>
+                    <label class="responsive" for="50%">50%</label>
+                    <input class="responsive" type="number" name="" id="custom" placeholder="Custom">
                 </div>
                 
             </div>
             <div class="number_of_people">
                 <p>Number of People</p>
-                <label for="NOP-input"><img src="images/icon-person.svg" alt=""> <input type="number" name="" id="NOP-input" placeholder="0"></label>
+                <p id="alert"></p>
+                <div class="NOF-input">
+                    <img src="images/icon-person.svg" alt="">
+                    <input type="number" name="" id="nof-number" placeholder="0">
+                </div>
             </div>
+        </section>
+
+                     <!--GREEN-->
+
+        <section class="green">
+            <div class="tip_amount">
+                <p class="value">$0.00</p>
+                <p>Tip Amount </p>
+                <p class="person">/ person</p>
+            </div>
+             <div class="total">
+                    <p class="value">$0.00</p>
+                    <p>Total</p>
+                    <p class="person">/ person</p>
+             </div>
+            
+            <input type="submit" value="RESET" onclick="reset ()">
         </section>
 
     </main>

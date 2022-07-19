@@ -30,28 +30,59 @@ body {
     margin: auto;
     padding: 15px 0px 45px 0px;
 }
+
+                /* WHITE */
+
 .container {
     background-color: white;
     margin: auto;
-    width: 630px;
-    height: auto;
+    width: 650px;
+    height: 290px;
     border-radius: 20px;
     padding: 20px 20px 20px 20px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.41);
 }
-.bill {
+.bill p {
     color: var(--GrayishCyan);
+    font-size: 14px;
 }
-.bill input {
+.dolar-input {
+    width: 278px;
+    display: flex;
+    align-items: center;
+}
+.dolar-input input {
     font-family: var(--textoprincipal);
     border: none;
     background-color: var(--VeryLightGrayishCyan);
     height: 20px;
-    width: 220px;
+    width: 95%;
     text-align: right;
     padding: 5px;
     font-size: 15px;
     color: var(--VeryDarkCyan);
 }
+.dolar-input input:hover {
+    cursor: pointer;
+}
+.dolar-input:focus-within {
+    border: 2px solid var(--GrayishCyan);
+    border-radius: 3px;
+}
+.dolar-input input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.dolar-input input::-webkit-outer-spin-button,
+.dolar-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.dolar-input img {
+    width: 5%;
+    background-color: var(--VeryLightGrayishCyan);
+    padding: 6px;
+}
+
 .bill label img {
     background-color: var(--VeryLightGrayishCyan);
     align-items: center;
@@ -63,44 +94,105 @@ body {
 }
 .select-tip p {
     padding-bottom: 10px;
+    font-size: 14px;
 }
 .select-tip .porcentages input {
     display: none;
+}
+.select-tip .porcentages {
+    columns: 2;
 }
 .select-tip label {
     display: inline-block;
     background-color: var(--VeryDarkCyan);
     color: var(--VeryLightGrayishCyan);
     width: 70px;
-    padding: 5px;
+    padding: 8px;
     border-radius: 3px;
     justify-content: center;
     text-align: center;
     margin-bottom: 5px;
 }
-
-.select-tip .custom {
+.select-tip label:hover {
+    cursor: pointer;
+    background-color: var(--StrongCyan);
+    color: var(--VeryDarkCyan);
+}
+.select-tip input#custom {
+    font-family: var(--textoprincipal);
+    text-align: center;
+    display: inline;
+    border: none;
+    width: 80px;
+    height: 32px;
+    border-radius: 3px;
+    padding: 4.4px 5.5px 2.6px 0px;
     background-color: var(--VeryLightGrayishCyan);
     color: var(--GrayishCyan);
+    outline: 0;
+    cursor: pointer;
+}
+.select-tip input#custom::-webkit-outer-spin-button,
+.select-tip input#custom::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.select-tip input#custom::placeholder{
+    color: var(--VeryDarkCyan);
+}
+.select-tip input#custom:focus::placeholder {
+    opacity: 0;
 }
 .number_of_people {
     color: var(--GrayishCyan);
+    font-size: 12px;
+}
+.number_of_people p {
+    display: inline;
+}
+.number_of_people p#alert {
+    color: rgba(255, 0, 0, 0.611);
+    float: right;
+    padding-right: 375px;
+}
+.NOF-input {
+    width: 278px;
+    display: flex;
+    align-items: center;
 }
 .number_of_people input {
     font-family: var(--textoprincipal);
     border: none;
     background-color: var(--VeryLightGrayishCyan);
     height: 20px;
-    width: 220px;
+    width: 95%;
     text-align: right;
     padding: 5px;
     font-size: 15px;
     color: var(--VeryDarkCyan);
 }
-.number_of_people label {
-    background-color: var(--VeryLightGrayishCyan);
-    
+.NOF-input input:hover {
+    cursor: pointer;
 }
+.NOF-input:focus-within {
+    border: 2px solid var(--GrayishCyan);
+    border-radius: 3px;
+}
+.NOF-input input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.NOF-input input::-webkit-outer-spin-button,
+.NOF-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.number_of_people img {
+    width: 5%;
+    background-color: var(--VeryLightGrayishCyan);
+    padding: 7px;
+}
+
+                /*GREEN*/
+
 .green {
     display: block;
     color: var(--VeryLightGrayishCyan);
@@ -109,7 +201,8 @@ body {
     float: right;
     border-radius: 15px;
     padding: 30px;
-    height: ;
+    height: 80%;
+    margin-top: -280px;
 }
 .green .tip_amount {
     align-items: center;
@@ -126,7 +219,7 @@ body {
     float: right;
 }
 .green .total {
-    padding-bottom: 150px;
+    padding-bottom: 90px;
 }
 .green input {
     display: block;
@@ -135,9 +228,50 @@ body {
     padding: 5px;
     border-radius: 5px;
     border: none;
-    background-color: var(--GrayishCyan);
+    background-color: var(--DarkGrayishCyan);
     color: var(--VeryDarkCyan);
     font-family: var(--textoprincipal);
 }
+.green input:hover {
+    background-color: var(--GrayishCyan);
+    cursor: pointer;
+}
 
+                /*RESPONSIVE*/
 
+@media (max-width: 748px) {
+    .container {
+        width: 240px;
+        height: 99vh;
+    }
+    .bill .dolar-input {
+        width: 241px;
+    }
+    .select-tip .responsive {
+        margin-left: 5px;
+    }
+    .select-tip label {
+        width: 100px;
+        padding: 4px;
+        margin-bottom: 10px;
+    }
+    .select-tip input#custom {
+        padding: 0;
+        width: 108px;
+    }
+    .number_of_people input {
+        width: 202px;
+    }
+    .number_of_people p#alert {
+        padding-right: 2px;
+    }
+    .green {
+        width: 180px;
+        height: 230px;
+        margin-top: 20px;
+    }
+    .green input {
+        width: 200px;
+        margin-left: -10px;
+    }
+}
