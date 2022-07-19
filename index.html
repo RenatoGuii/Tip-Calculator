@@ -33,7 +33,7 @@
                     <label for="10%">10%</label>
                     <input type="radio" name="tips" id="15%" value="15/100">
                     <label for="15%">15%</label>
-                    <input type="radio" name="tips" id="25%" value="25/100">
+                    <input type="radio" name="tips" id="25%" value="25/100" >
                     <label class="responsive" for="25%">25%</label>
                     <input type="radio" name="tips" id="50%" value="50/100">
                     <label class="responsive" for="50%">50%</label>
@@ -55,17 +55,17 @@
 
         <section class="green">
             <div class="tip_amount">
-                <p class="value">$0.00</p>
+                <p class="value" id="value1">$0.00</p>
                 <p>Tip Amount </p>
                 <p class="person">/ person</p>
             </div>
              <div class="total">
-                    <p class="value">$0.00</p>
+                    <p class="value" id="value2">$0.00</p>
                     <p>Total</p>
                     <p class="person">/ person</p>
              </div>
             
-            <input type="submit" value="RESET" onclick="reset ()">
+            <input id="reset" type="submit" value="RESET" onclick="reset ()">
         </section>
 
     </main>

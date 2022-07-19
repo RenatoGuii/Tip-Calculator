@@ -51,7 +51,7 @@ body {
     display: flex;
     align-items: center;
 }
-.dolar-input input {
+.bill input {
     font-family: var(--textoprincipal);
     border: none;
     background-color: var(--VeryLightGrayishCyan);
@@ -96,7 +96,7 @@ body {
     padding-bottom: 10px;
     font-size: 14px;
 }
-.select-tip .porcentages input {
+.porcentages input {
     display: none;
 }
 .select-tip .porcentages {
@@ -115,6 +115,10 @@ body {
 }
 .select-tip label:hover {
     cursor: pointer;
+    background-color: var(--StrongCyan);
+    color: var(--VeryDarkCyan);
+}
+.porcentages input:checked + label {
     background-color: var(--StrongCyan);
     color: var(--VeryDarkCyan);
 }
@@ -145,6 +149,7 @@ body {
 .number_of_people {
     color: var(--GrayishCyan);
     font-size: 12px;
+    
 }
 .number_of_people p {
     display: inline;
@@ -157,7 +162,6 @@ body {
 .NOF-input {
     width: 278px;
     display: flex;
-    align-items: center;
 }
 .number_of_people input {
     font-family: var(--textoprincipal);
@@ -243,9 +247,10 @@ body {
     .container {
         width: 240px;
         height: 99vh;
+        margin: auto;
     }
-    .bill .dolar-input {
-        width: 241px;
+    .dolar-input {
+        width: 237.5px;
     }
     .select-tip .responsive {
         margin-left: 5px;
@@ -257,10 +262,13 @@ body {
     }
     .select-tip input#custom {
         padding: 0;
-        width: 108px;
+           width: 108px;
     }
     .number_of_people input {
         width: 202px;
+    }
+    .NOF-input {
+        width: 241px;
     }
     .number_of_people p#alert {
         padding-right: 2px;
