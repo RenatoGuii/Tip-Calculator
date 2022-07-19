@@ -36,7 +36,7 @@ body {
     width: 630px;
     height: auto;
     border-radius: 20px;
-    padding: 40px;
+    padding: 20px 20px 20px 20px;
 }
 .bill {
     color: var(--GrayishCyan);
@@ -52,11 +52,92 @@ body {
     font-size: 15px;
     color: var(--VeryDarkCyan);
 }
-.bill input:placeholder-shown {
-    border: none;
-}
-.bill label {
+.bill label img {
     background-color: var(--VeryLightGrayishCyan);
-    height: 5px;
-    padding-left: 5px;
+    align-items: center;
+    margin: auto;
 }
+.select-tip {
+    color: var(--GrayishCyan);
+    padding: 30px 0px;
+}
+.select-tip p {
+    padding-bottom: 10px;
+}
+.select-tip .porcentages input {
+    display: none;
+}
+.select-tip label {
+    display: inline-block;
+    background-color: var(--VeryDarkCyan);
+    color: var(--VeryLightGrayishCyan);
+    width: 70px;
+    padding: 5px;
+    border-radius: 3px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.select-tip .custom {
+    background-color: var(--VeryLightGrayishCyan);
+    color: var(--GrayishCyan);
+}
+.number_of_people {
+    color: var(--GrayishCyan);
+}
+.number_of_people input {
+    font-family: var(--textoprincipal);
+    border: none;
+    background-color: var(--VeryLightGrayishCyan);
+    height: 20px;
+    width: 220px;
+    text-align: right;
+    padding: 5px;
+    font-size: 15px;
+    color: var(--VeryDarkCyan);
+}
+.number_of_people label {
+    background-color: var(--VeryLightGrayishCyan);
+    
+}
+.green {
+    display: block;
+    color: var(--VeryLightGrayishCyan);
+    background-color: var(--VeryDarkCyan);
+    width: 43%;
+    float: right;
+    border-radius: 15px;
+    padding: 30px;
+    height: ;
+}
+.green .tip_amount {
+    align-items: center;
+    padding-bottom: 40px;
+    font-size: 13px;    
+}
+.green .person {
+    color: var(--GrayishCyan);
+    font-size: 11px;
+}
+.green .value {
+    color: var(--GrayishCyan);
+    font-size: 30px;
+    float: right;
+}
+.green .total {
+    padding-bottom: 150px;
+}
+.green input {
+    display: block;
+    margin: auto;
+    width: 270px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--GrayishCyan);
+    color: var(--VeryDarkCyan);
+    font-family: var(--textoprincipal);
+}
+
+

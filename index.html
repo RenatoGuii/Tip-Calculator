@@ -12,47 +12,56 @@
     <img class="logo" src="images/logo.svg" alt="">
     
     <main class="container">
+     
+                    <!--GREEN-->
+
+        <section class="green">
+                <div class="tip_amount">
+                    <p class="value">$0.00</p>
+                    <p>Tip Amount </p>
+                    <p class="person">/ person</p>
+                </div>
+                 <div class="total">
+                        <p class="value">$0.00</p>
+                        <p>Total</p>
+                        <p class="person">/ person</p>
+                 </div>
+                
+                <input type="submit" value="RESET" onclick="reset ()">
+            </section>
         
-        <div class="bill">
-            <p>Bill</p>
-            <label for="bill_input"><img src="images/icon-dollar.svg" alt="">  <input type="number" name="bill_input" id="bill_input" placeholder="0"></label>
+                    <!--WHITE-->
+
+        <section class="white">
+            <div class="bill">
+                <p>Bill</p>
+                <label for="bill_input"><img src="images/icon-dollar.svg" alt="">  <input type="number" name="bill_input" id="bill_input" placeholder="0"></label>
             
-        </div>
-
-        <div class="select-tip">
-            <p>Select Tip %</p>
-            <input type="radio" name="tips" id="5%" value="5/100">
-            <label for="5%"></label> 
-            <input type="radio" name="tips" id="10%" value="10/100">
-            <label for="10%"></label>
-            <input type="radio" name="tips" id="15%" value="15/100">
-            <label for="15%"></label>
-            <input type="radio" name="tips" id="25%" value="25/100">
-            <label for="25%"></label>
-            <input type="radio" name="tips" id="50%" value="50/100">
-            <label for="50%"></label>
-            <input type="button" value="Custom" onclick="custom ()">
-        </div>
-
-        <div class="number_of_people">
-            <p>Number of People</p>
-            <input type="text" name="" id="">
-        </div>
-
-        <div class="screen">
-            <div class="tip_amount">
-                <p>Tip Amount</p>
-                <p>/ person</p>
-                <p>$0.00</p>
             </div>
-            <div class="total">
-                <p>Total</p>
-                <p>/ person</p>
-                <p>$0.00</p>
+            <div class="select-tip">
+                <p>Select Tip %</p>
+                <div class="porcentages">
+                    <input type="radio" name="tips" id="5%" value="5/100">
+                    <label for="5%">5%</label>
+                    <input type="radio" name="tips" id="10%" value="10/100">
+                    <label for="10%">10%</label>
+                    <input type="radio" name="tips" id="15%" value="15/100">
+                    <label for="15%">15%</label>
+                    <input type="radio" name="tips" id="25%" value="25/100">
+                    <label for="25%">25%</label>
+                    <input type="radio" name="tips" id="50%" value="50/100">
+                    <label for="50%">50%</label>
+                    <input type="submit" value="" onclick="custom ()">
+                    <label class="custom" for="custom">Custom</label>
+                </div>
+                
             </div>
+            <div class="number_of_people">
+                <p>Number of People</p>
+                <label for="NOP-input"><img src="images/icon-person.svg" alt=""> <input type="number" name="" id="NOP-input" placeholder="0"></label>
+            </div>
+        </section>
 
-            <input type="button" value="RESET" onclick="reset ()">
-        </div>
     </main>
 
 <script src="tip-calc.js"></script>
