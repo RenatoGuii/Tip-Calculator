@@ -154,11 +154,6 @@ body {
 .number_of_people p {
     display: inline;
 }
-.number_of_people p#alert {
-    color: rgba(255, 0, 0, 0.611);
-    float: right;
-    padding-right: 375px;
-}
 .NOF-input {
     width: 278px;
     display: flex;
