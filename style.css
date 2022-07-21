@@ -207,7 +207,7 @@ body {
     border-radius: 15px;
     padding: 30px;
     height: 80%;
-    margin-top: -278px;
+    margin-top: -285px;
 }
 .green .tip_amount {
     align-items: center;
@@ -245,10 +245,15 @@ body {
                 /*RESPONSIVE*/
 
 @media (max-width: 748px) {
+    body {
+        display: block;
+    }
     .container {
         width: 240px;
-        height: 99%;
+        min-height: 300px;
+        height: 615px;
         margin: auto;
+        border-radius: 15px 15px 0px 0px;
     }
     .dolar-input {
         width: 237.5px;
@@ -275,9 +280,12 @@ body {
         padding-right: 2px;
     }
     .green {
+        display: block;
         width: 180px;
-        height: 230px;
+        min-height: 210px;
+        height: 215px;
         margin-top: 20px;
+        border-radius: 15px 15px 0px 0px;
     }
     .green input {
         width: 200px;

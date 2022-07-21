@@ -26,8 +26,6 @@ function kitten () {
     }
 }
 
-
-
 function reset () {
     var tipsJS = document.querySelector('input[name="tips"]:checked')
     dolar_numberJS.value = null
