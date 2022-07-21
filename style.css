@@ -252,6 +252,7 @@ body {
         width: 240px;
         min-height: 300px;
         height: 615px;
+        max-width: 615px;
         margin: auto;
         border-radius: 15px 15px 0px 0px;
     }
