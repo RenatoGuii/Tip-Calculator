@@ -9,15 +9,21 @@ function kitten () {
 
     if (dolar_numberJS.value > 0 && nofJS.value >= 1 && tipsJS.value > 0) {
         let gorget = dolar_numberJS.value * tipsJS.value
-        let valueTotal = number(dolar_numberJS.value) + number(gorget)
-        value1JS.innerHTML = `$${gorget / number(nofJS.value)}`
-        value2JS.innerHTML = `$${valueTotal / number(nofJS.value)}`
+        let valueTotal = dolar_numberJS.value + gorget
+        value1JS.innerHTML = `$${gorget / nofJS.value}`
+        value2JS.innerHTML = `$${valueTotal / nofJS.value}`
+        console.log (valueTotal)
     } else if (dolar_numberJS.value > 0 && nofJS.value >= 1 && customJS.value >= 0) {
         let gorget = dolar_numberJS.value * (customJS.value / 100)
         let valueTotal = number(dolar_numberJS.value) + number(gorget)
-        value1JS.innerHTML = `$${gorget / number(nofJS)}`
-        value2JS.innerHTML = `$${valueTotal / number(nofJS)}`
+        value1JS.innerHTML = `$${gorget / (nofJS)}`
+        value2JS.innerHTML = `$${valueTotal / (nofJS)}`
     }
+    
 }
 
-setInterval(kitten, 1000)
+function reset () {
+    kitten ()
+}
+
+//setInterval(kitten, 1000)
