@@ -42,9 +42,13 @@ body {
     padding: 20px 20px 20px 20px;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.41);
 }
+.bill {
+    margin-bottom: 10px;
+}
 .bill p {
     color: var(--GrayishCyan);
     font-size: 14px;
+    padding-bottom: 3px;
 }
 .dolar-input {
     width: 278px;
@@ -68,6 +72,7 @@ body {
 .dolar-input:focus-within {
     border: 2px solid var(--GrayishCyan);
     border-radius: 3px;
+    margin-top: -4px;
 }
 .dolar-input input:focus {
     box-shadow: 0 0 0 0;
@@ -90,7 +95,8 @@ body {
 }
 .select-tip {
     color: var(--GrayishCyan);
-    padding: 30px 0px;
+    padding-bottom: 10px;
+    margin: 24px 0px;
 }
 .select-tip p {
     padding-bottom: 10px;
@@ -149,10 +155,9 @@ body {
 .number_of_people {
     color: var(--GrayishCyan);
     font-size: 12px;
-    
 }
 .number_of_people p {
-    display: inline;
+    padding-bottom: 4px;
 }
 .NOF-input {
     width: 278px;
@@ -175,6 +180,7 @@ body {
 .NOF-input:focus-within {
     border: 2px solid var(--GrayishCyan);
     border-radius: 3px;
+    margin-top: -4px;
 }
 .NOF-input input:focus {
     box-shadow: 0 0 0 0;
@@ -201,7 +207,7 @@ body {
     border-radius: 15px;
     padding: 30px;
     height: 80%;
-    margin-top: -280px;
+    margin-top: -278px;
 }
 .green .tip_amount {
     align-items: center;
@@ -241,7 +247,7 @@ body {
 @media (max-width: 748px) {
     .container {
         width: 240px;
-        height: 99vh;
+        height: 99%;
         margin: auto;
     }
     .dolar-input {
